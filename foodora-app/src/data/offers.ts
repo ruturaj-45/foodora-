@@ -1,0 +1,42 @@
+import type { Offer } from '../types';
+
+export const restaurantOffers: Offer[] = [
+  {
+    id: 'offer-1',
+    restaurantId: 'rest-2',
+    title: '20% OFF Weekend Special',
+    description: 'Get 20% off on all orders above ₹300 every weekend.',
+    type: 'percentage',
+    value: 20,
+    minOrder: 300,
+    startDate: '2026-09-27',
+    endDate: '2026-10-31',
+    isActive: true,
+    couponCode: 'FOOD20',
+  },
+  {
+    id: 'offer-2',
+    restaurantId: 'rest-2',
+    title: 'FREE DELIVERY Always',
+    description: 'Enjoy free delivery on all orders from The Biryani House.',
+    type: 'free_delivery',
+    value: 0,
+    minOrder: 0,
+    startDate: '2026-01-01',
+    endDate: '2026-12-31',
+    isActive: true,
+  },
+  {
+    id: 'offer-3',
+    restaurantId: 'rest-2',
+    title: 'Biryani Feast ₹100 OFF',
+    description: '₹100 off on orders above ₹400.',
+    type: 'flat',
+    value: 100,
+    minOrder: 400,
+    startDate: '2026-10-01',
+    endDate: '2026-10-15',
+    isActive: false,
+    couponCode: 'BIRYANI100',
+  },
+];
